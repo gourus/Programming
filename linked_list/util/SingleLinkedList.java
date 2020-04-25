@@ -62,8 +62,6 @@ public class SingleLinkedList {
 	 */
 	public void printLinkedList(Node head, String sep) {
 		
-		System.out.println("Printing given List...");
-
 		// Base condition
 		if (head == null) {
 			System.out.println("List is empty...");
