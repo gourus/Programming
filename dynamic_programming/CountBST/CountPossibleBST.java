@@ -10,19 +10,19 @@ package dynamic_programming.CountBST;
  * Then we can have 2 roots - root as 1 and root as 2.
  * Possible BSTs are - 2
  * 		
- * 		1			2
+ * 		1		    2
  *		 \	  +	   /
  *		  2		  1
  *	-----------------------------
- *		1	  +		1	= 	2
+ *		1	  +	  1	=    2
  *	-----------------------------
  * For n = 3;
  * 
- *  1				2			3
- *   \		 + 	   / \	 +	   /
- *   {2 , 3}	  1   3		 {1 , 2}
+ *  1			  2		 3
+ *   \		 +	 / \	 +	/
+ *   {2 , 3}	        1   3	     {1 , 2}
  * -----------------------------------------  
- *   2		 +		1	 +		2	= 	5
+ *   2		 +	1	 +	2	= 	5
  * -----------------------------------------
  * 
  * {2 , 3} and {1, 2} are BSTs with max number of 2 variables. We have the output in 
@@ -30,13 +30,13 @@ package dynamic_programming.CountBST;
  *   
  * For n = 4;
  * 
- *  1			   2			 3			  4
- *   \		 + 	  / \	   +   /   \    +    /
- *   {2,3,4}	 1  {3,4}	 {1,2}  4	  {1,2,3}
+ *  1			   2		    3		 4
+ *   \		 + 	  / \	   +   	  /   \    +    /
+ *   {2,3,4}	 	1  {3,4}	{1,2}  4.     {1,2,3}
  *  
  *  Now we will find out in formula manner.
  * --------------------------------------------------------
- *  1 * 5    +    1 * 2	   +  2 * 1	    +   5 * 1   =   14
+ *  1 * 5        +      1 * 2	   +      2 * 1	  +     5 * 1   =   14
  * --------------------------------------------------------    
  *   
  *  Now here, we need to solve the possible BSTs for 3 and 2. We also have them.
