@@ -1,5 +1,5 @@
 # Programming
-This Repo contains most important programming questions asked in most of the product based companies.
+This Repo contains the important programming questions asked in most of the product based companies.
 
 I will try to publish all the data structure concepts here with sorce code and better explanation.
 
